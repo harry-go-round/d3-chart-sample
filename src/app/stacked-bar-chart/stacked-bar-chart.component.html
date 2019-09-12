@@ -1,0 +1,20 @@
+<h2>stacked bar chart</h2>
+<div class="inline-block" [appStackedBarChart]="obsData"></div>
+<div class="inline-block input-area">
+  <table>
+    <thead>
+      <tr>
+        <th>name</th>
+        <th *ngFor="let prop of props">{{ prop }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let datum of data">
+        <td>{{ datum.name }}</td>
+        <td *ngFor="let prop of props">
+          <input type="number" [value]="datum.obj[prop]" (input)="change(datum, prop, $event)">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,17 @@
+:host >>> .inline-block {
+    display: inline-block;
+}
+:host >>> .input-area {
+    margin: 0 18px;
+    font-size: 18px;
+}
+:host >>> .input {
+    line-height: 36px;
+}
+:host >>> .label {
+    width: 50px;
+}
+:host >>> input {
+    font-size: 18px;
+    width: 120px;
+}

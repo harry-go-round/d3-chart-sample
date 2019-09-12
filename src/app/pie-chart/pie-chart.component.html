@@ -1,0 +1,10 @@
+<h2>pie chart</h2>
+<div class="inline-block" [appPieChart]="obsData"></div>
+<div class="inline-block input-area">
+    <ng-container *ngFor="let datum of data">
+        <div class="input">
+            <div class="inline-block label">{{ datum.name }}:</div>
+            <input type="number" [value]="datum.value" (input)="change(datum, $event)">
+        </div>
+    </ng-container>
+</div>
